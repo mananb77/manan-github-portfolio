@@ -14,7 +14,7 @@ function App() {
       icon: "🧬",
       github: "https://github.com/mananb77/genai-mcb-chatbot",
       demo: "https://mananb77.github.io/genai-mcb-chatbot/",
-      preview: "/previews/genai-chatbot.png"
+      preview: `${import.meta.env.BASE_URL}previews/genai-chatbot.png`
     },
     {
       title: "GradeSync",
@@ -31,7 +31,7 @@ function App() {
       icon: "📅",
       github: "https://github.com/mananb77/coursecraft-ai",
       demo: "https://mananb77.github.io/coursecraft-ai/demo",
-      preview: "/previews/coursecraft-ai.png"
+      preview: `${import.meta.env.BASE_URL}previews/coursecraft-ai.png`
     },
     {
       title: "Secure File Sharing System",
@@ -99,7 +99,7 @@ function App() {
         <div className="text-center">
           <div className="mb-8">
             <img
-              src="/profile.png"
+              src={`${import.meta.env.BASE_URL}logo.png`}
               alt="Profile"
               className="w-40 h-40 rounded-full mx-auto border-4 border-white shadow-2xl"
             />
@@ -137,7 +137,7 @@ function App() {
               Email
             </a>
             <a
-              href="/resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-6 py-3 rounded-full transition-all duration-300 flex items-center gap-2"
