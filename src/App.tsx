@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ExternalLink, Code, Trophy, Star, Users, FileText, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Code, Trophy, Star, Users, FileText, ChevronDown, BookOpen } from 'lucide-react';
 
 function App() {
   const scrollToProjects = () => {
@@ -32,7 +32,9 @@ function App() {
       github: "https://github.com/mananb77/gradesync-demo",
       demo: "https://mananb77.github.io/gradesync-demo/",
       preview: `${import.meta.env.BASE_URL}previews/gradesync.png`,
-      award: "Published at SIGCSE 2025"
+      award: "Published at SIGCSE 2025",
+      acm: "https://dl.acm.org/doi/10.1145/3641555.3705192",
+      paper: `${import.meta.env.BASE_URL}gradesync-2-pager.pdf`
     },
     {
       title: "CourseCraft.ai",
@@ -212,28 +214,56 @@ function App() {
                     ))}
                   </div>
 
-                  <div className="flex gap-2">
-                    {project.github && (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 bg-[#00BFFF] hover:bg-[#0096CC] text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2 text-sm font-medium"
-                      >
-                        <Code size={16} />
-                        View on GitHub
-                      </a>
-                    )}
-                    {project.demo && (
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2 text-sm font-medium"
-                      >
-                        <ExternalLink size={16} />
-                        Live Demo
-                      </a>
+                  <div className="flex flex-col gap-2">
+                    <div className="flex gap-2">
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 bg-[#00BFFF] hover:bg-[#0096CC] text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2 text-sm font-medium"
+                        >
+                          <Code size={16} />
+                          View on GitHub
+                        </a>
+                      )}
+                      {project.demo && (
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2 text-sm font-medium"
+                        >
+                          <ExternalLink size={16} />
+                          Live Demo
+                        </a>
+                      )}
+                    </div>
+                    {(project.acm || project.paper) && (
+                      <div className="flex gap-2">
+                        {project.acm && (
+                          <a
+                            href={project.acm}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2 text-sm font-medium"
+                          >
+                            <BookOpen size={16} />
+                            ACM Paper
+                          </a>
+                        )}
+                        {project.paper && (
+                          <a
+                            href={project.paper}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2 text-sm font-medium"
+                          >
+                            <FileText size={16} />
+                            View PDF
+                          </a>
+                        )}
+                      </div>
                     )}
                   </div>
                 </div>
