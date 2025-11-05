@@ -43,7 +43,8 @@ function App() {
       icon: "📅",
       github: "https://github.com/mananb77/coursecraft-ai",
       demo: "https://mananb77.github.io/coursecraft-ai/demo",
-      preview: `${import.meta.env.BASE_URL}previews/coursecraft-ai.png`
+      preview: `${import.meta.env.BASE_URL}previews/coursecraft-ai.png`,
+      award: "1st Place - CS160: User Interface Design (Summer 2023)"
     },
     {
       title: "Secure File Sharing System",
