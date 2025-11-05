@@ -31,6 +31,7 @@ function App() {
       icon: "📊",
       github: "https://github.com/mananb77/gradesync-demo",
       demo: "https://mananb77.github.io/gradesync-demo/",
+      preview: `${import.meta.env.BASE_URL}previews/gradesync.png`,
       award: "Published at SIGCSE 2025"
     },
     {
