@@ -21,7 +21,8 @@ function App() {
       description: "AI-powered application that generates customized business personas. Input your business concept and interact with an AI persona tailored to your industry through an intelligent chatbot interface.",
       tech: ["React", "Lovable Cloud", "Gemini AI", "Serverless Functions", "AI Chat"],
       icon: "🎭",
-      demo: "https://biz-sim-bot.lovable.app/"
+      demo: "https://biz-sim-bot.lovable.app/",
+      preview: `${import.meta.env.BASE_URL}previews/persona-architect.png`
     },
     {
       title: "GradeSync",
