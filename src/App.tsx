@@ -249,7 +249,7 @@ function App() {
                             className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2 text-sm font-medium"
                           >
                             <BookOpen size={16} />
-                            ACM Paper
+                            ACM Poster
                           </a>
                         )}
                         {project.paper && (
