@@ -30,7 +30,7 @@ function App() {
       title: "GradeSync",
       description: "Educational Grade Management System for Multi-Platform Assessment Integration. Streamlines grade synchronization across multiple educational platforms.",
       tech: ["Python 3.11", "React 18", "FastAPI", "Grade Management", "Educational Technology"],
-      categories: ["Full Stack", "Research"],
+      categories: ["Backend", "Research"],
       icon: "📊",
       github: "https://github.com/mananb77/gradesync-demo",
       demo: "https://mananb77.github.io/gradesync-demo/",
