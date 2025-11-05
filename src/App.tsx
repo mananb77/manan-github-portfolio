@@ -26,10 +26,11 @@ function App() {
     },
     {
       title: "GradeSync",
-      description: "Research project analyzing student engagement with grading systems. Published at SIGCSE 2025.",
-      tech: ["Python", "Data Analysis", "Research"],
+      description: "Educational Grade Management System for Multi-Platform Assessment Integration. Streamlines grade synchronization across multiple educational platforms.",
+      tech: ["Python 3.11", "React 18", "FastAPI", "Grade Management", "Educational Technology"],
       icon: "📊",
-      github: "https://github.com/AFA-Tooling/GradeSync",
+      github: "https://github.com/mananb77/gradesync-demo",
+      demo: "https://mananb77.github.io/gradesync-demo/",
       award: "Published at SIGCSE 2025"
     },
     {
