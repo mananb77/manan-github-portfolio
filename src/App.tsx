@@ -52,7 +52,8 @@ function App() {
       tech: ["Golang", "Cryptography", "Security"],
       icon: "🔐",
       github: "https://github.com/mananb77/file-sharing-system",
-      demo: "https://mananb77.github.io/file-sharing-system/"
+      demo: "https://mananb77.github.io/file-sharing-system/",
+      preview: `${import.meta.env.BASE_URL}previews/secure-share.png`
     },
     {
       title: "DeepSafe",
